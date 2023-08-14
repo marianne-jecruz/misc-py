@@ -25,4 +25,6 @@ plt.plot(xdata, ydata1, 'g', label='data')
 y0_spl = UnivariateSpline(xdata, ydata0)
 y1_spl = UnivariateSpline(xdata, ydata1)
 
+print(meanSquareError(y0_spl, y1_spl, 4, 0.1, 1))
+
 #plt.show()
